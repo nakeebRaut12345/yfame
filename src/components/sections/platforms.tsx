@@ -1,3 +1,4 @@
+import { useScrollReveal, scrollRevealClasses } from "../../hooks/use-scroll-reveal";
 import Tooltip from "@mui/material/Tooltip";
 
 const platforms = [
@@ -21,11 +22,16 @@ const platforms = [
 ];
 
 export function Platforms() {
+  const { ref: headingRef, visible: headingVisible } = useScrollReveal<HTMLHeadingElement>();
+
   return (
     <section id="platforms" className="py-10 md:py-15 border-t border-border relative">
       <div className="max-w-[1400px] mx-auto px-6">
         <div className="text-center">
-          <h2 className="capitalize text-[36px] font-bold leading-[0.98] tracking-[-0.03em] max-w-5xl mx-auto">
+          <h2
+            ref={headingRef}
+            className={`capitalize text-[36px] font-bold leading-[0.98] tracking-[-0.03em] max-w-5xl mx-auto ${scrollRevealClasses(headingVisible)}`}
+          >
             We help you grow on
           </h2>
         </div>

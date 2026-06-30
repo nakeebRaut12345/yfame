@@ -23,7 +23,7 @@ export function Hero() {
     <section
       id="top"
       ref={heroRef}
-      className="relative min-h-[100svh] flex items-center justify-center bg-mesh overflow-hidden px-6 pt-14.5"
+      className="relative bg-mesh overflow-hidden px-6 pt-[clamp(5.5rem,12vh,6.5rem)] pb-10 sm:pb-12"
       style={{
         backgroundImage:
           "radial-gradient(600px circle at var(--mx, 50%) var(--my, 50%), oklch(0.70 0.19 250 / 0.18), transparent 40%)",
@@ -53,22 +53,22 @@ export function Hero() {
         <span>YouTube · Instagram</span>
       </div> */}
 
-      <div className="relative max-w-[1200px] mx-auto text-center fade-up">
+      <div className="relative w-full max-w-[1200px] mx-auto text-center">
         {/* <div className="chip mx-auto mb-10">
           <span className="w-1 h-1 rounded-full bg-primary" />
           50M+ organic views every month
         </div> */}
 
-        <h1 className="text-[7rem] font-bold leading-[0.92] tracking-[-0.04em]">
-          <span className="block">
+        <h1 className="w-full text-[clamp(2.5rem,9.5vw+1.125rem,7rem)] sm:text-[clamp(2.25rem,8vw+1rem,7rem)] font-bold leading-[0.82] tracking-[-0.02em] sm:tracking-[-0.04em] text-balance">
+          <span className="block blur-in">
             Human Beings Are <span className="text-serif text-gradient-warm">Predictable.</span>
           </span>
-          <span className="block mt-1">
+          <span className="block blur-in blur-in-delay-1">
             Content is Too.
           </span>
         </h1>
 
-        <p className="mt-10 text-base md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+        <p className="mt-3 sm:mt-4 text-sm sm:text-base md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed text-balance px-1 fade-up fade-up-delay-1">
           The secret to virality isn't chasing algorithms.
           <br />
           It's understanding <span className="text-foreground">Human Behaviour</span> and mastering the <span className="text-foreground">Fundamentals</span>.
@@ -78,9 +78,9 @@ export function Hero() {
           Social media for India's Top 0.1% of doctors · YouTube & Instagram
         </p> */}
 
-        <div className="mt-12 flex flex-wrap items-center justify-center gap-3 mb-8">
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-3 fade-up fade-up-delay-2">
           <a
-            href="mailto:hello@yfame.com"
+            href="#doctors"
             className="group relative px-7 py-3.5 rounded-full bg-primary text-primary-foreground font-medium hover:scale-[1.03] transition-all duration-300 shadow-[0_10px_40px_-10px_var(--color-primary)]"
           >
             See case studies

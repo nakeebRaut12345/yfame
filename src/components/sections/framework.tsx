@@ -1,3 +1,5 @@
+import { useScrollReveal, scrollRevealClasses } from "../../hooks/use-scroll-reveal";
+
 const ccnCards = [
   { letter: "C", word: "Core Audience", body: "The people who already know and trust you. Our content gives them deeper insights and keeps them coming back." },
   { letter: "C", word: "Casual Audience", body: "The people interested in your topic but not yet attached to your brand. Our content solves problems in simple, relatable ways and gradually turns them into followers." },
@@ -31,11 +33,16 @@ const tips = [
 ];
 
 export function Framework() {
+  const { ref: headingRef, visible: headingVisible } = useScrollReveal<HTMLHeadingElement>();
+
   return (
     <section id="framework" className="py-15 md:py-25 border-t border-border relative">
       <div className="max-w-[1400px] mx-auto px-6">
         <div className="mb-16 text-center">
-          <h2 className="capitalize text-[3rem] font-bold leading-[0.98] tracking-[-0.03em] max-w-5xl mx-auto">
+          <h2
+            ref={headingRef}
+            className={`capitalize text-[3rem] font-bold leading-[0.98] tracking-[-0.03em] max-w-5xl mx-auto ${scrollRevealClasses(headingVisible)}`}
+          >
             Our viral philosophy: <span className="text-serif text-gradient-warm">the CCN Framework.</span>
           </h2>
         </div>

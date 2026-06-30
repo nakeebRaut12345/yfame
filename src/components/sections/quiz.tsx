@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useScrollReveal, scrollRevealClasses } from "../../hooks/use-scroll-reveal";
 
 const mythOrFact = [
   { q: "The right hashtags can make your content go viral.", a: "Nope" },
@@ -31,7 +32,7 @@ function MythOrFactCard({ item, index }: { item: (typeof mythOrFact)[number]; in
     <div
       className={`myth-fact-card group glass rounded-2xl p-6 hover:border-primary/40 transition ${
         isOpen
-          ? item.a === "Fact"
+          ? item.a === "Yes"
             ? "!bg-green-500/15 !border-green-500/50"
             : "!bg-red-500/15 !border-red-500/50"
           : ""
@@ -75,11 +76,16 @@ function MythOrFactCard({ item, index }: { item: (typeof mythOrFact)[number]; in
 }
 
 export function Quiz() {
+  const { ref: headingRef, visible: headingVisible } = useScrollReveal<HTMLHeadingElement>();
+
   return (
     <section id="quiz" className="py-15 md:py-25 border-t border-border relative">
       <div className="max-w-[1400px] mx-auto px-6">
         <div className="mb-16 text-center">
-          <h2 className="capitalize text-[3rem] font-bold leading-[0.98] tracking-[-0.03em] max-w-5xl mx-auto">
+          <h2
+            ref={headingRef}
+            className={`capitalize text-[3rem] font-bold leading-[0.98] tracking-[-0.03em] max-w-5xl mx-auto ${scrollRevealClasses(headingVisible)}`}
+          >
             Is this actually <span className="text-serif text-gradient-warm">true?</span>
           </h2>
           <p className="capitalize mt-6 text-muted-foreground text-lg max-w-xl mx-auto">

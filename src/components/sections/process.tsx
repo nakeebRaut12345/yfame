@@ -1,3 +1,5 @@
+import { useScrollReveal, scrollRevealClasses } from "../../hooks/use-scroll-reveal";
+
 const steps = [
   "Content Strategy",
   "Scripting",
@@ -9,10 +11,15 @@ const steps = [
 ];
 
 export function Process() {
+  const { ref: headingRef, visible: headingVisible } = useScrollReveal<HTMLDivElement>();
+
   return (
     <section id="process" className="py-15 md:py-25 border-t border-border relative">
       <div className="max-w-[1400px] mx-auto px-6">
-        <div className="mb-16 text-center">
+        <div
+          ref={headingRef}
+          className={`mb-16 text-center ${scrollRevealClasses(headingVisible)}`}
+        >
           <h2 className=" text-[3rem] font-bold leading-[0.98] tracking-[-0.03em] max-w-5xl mx-auto">
             All We Need is <span className="text-serif text-gradient-warm">2 Hours</span> of Your Time Every Month.
           </h2>

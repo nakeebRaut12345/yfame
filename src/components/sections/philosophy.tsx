@@ -1,4 +1,4 @@
-
+import { useScrollReveal, scrollRevealClasses } from "../../hooks/use-scroll-reveal";
 
 const philosophies = [
   {
@@ -68,12 +68,17 @@ function PhilosophyCard({ item }: { item: (typeof philosophies)[number] }) {
 }
 
 export function Philosophy() {
+  const { ref: headingRef, visible: headingVisible } = useScrollReveal<HTMLHeadingElement>();
+
   return (
     <section id="philosophy" className="py-15 md:py-25 border-t border-border relative grain">
       <span className="grain-after absolute inset-0" />
       <div className="max-w-[1400px] mx-auto px-6 relative z-10">
         <div className="mb-20 text-center">
-          <h2 className="capitalize text-[3rem] font-bold leading-[0.98] tracking-[-0.03em] max-w-5xl mx-auto">
+          <h2
+            ref={headingRef}
+            className={`capitalize text-[3rem] font-bold leading-[0.98] tracking-[-0.03em] max-w-5xl mx-auto ${scrollRevealClasses(headingVisible)}`}
+          >
             Our philosophy of <span className="text-serif text-gradient-warm">growth.</span>
           </h2>
         </div>
