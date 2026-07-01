@@ -4,17 +4,17 @@ const caseStudies = [
   {
     name: "Dr. Umang Shah",
     result: "1M+ organic views every month",
-    img: "https://framerusercontent.com/images/5eHJQlTUQYkvL2XpMymeQY5ybU.webp?width=874&height=596",
+    img: "/umang_shah.png",
   },
   {
-    name: "Dr. Rohini Patil",
-    result: "0 → 100k on YouTube in 12 months",
-    img: "https://framerusercontent.com/images/r22pepKsdJo3dnKjZtfGRB5AG8.webp?width=736&height=552",
+    name: "Dr. Jay Shah",
+    result: "800k+ organic views first month",
+    img: "/jay_shah.png",
   },
   {
-    name: "Saloni Arora",
-    result: "15k → 125k in 3 months",
-    img: "https://framerusercontent.com/images/VQ1PSxvSp21l6hPTQhso2AsRw.webp?width=800&height=712",
+    name: "Ameya Innovex",
+    result: "1M impressions",
+    img: "/innovex.png",
   },
 ];
 
@@ -61,7 +61,7 @@ export function Doctors() {
 
         <div className="mt-12 text-center">
           <a
-            href="mailto:hello@yfame.com"
+            href=""
             className="inline-flex items-center gap-2 text-sm font-sans font-normal uppercase tracking-[0.2em] text-muted-foreground hover:text-primary transition"
           >
             <span className="w-8 h-px bg-current" />

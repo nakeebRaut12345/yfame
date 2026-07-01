@@ -158,6 +158,10 @@
   animation: fade-up 0.8s ease-out both;
 }
 
+.scroll-reveal-in {
+  animation: fade-up 2s ease-out both;
+}
+
 .fade-up-delay-1 {
   animation-delay: 0.5s;
 }

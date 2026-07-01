@@ -26,5 +26,5 @@ export function useScrollReveal<T extends HTMLElement>(threshold = 0.2) {
 }
 
 export function scrollRevealClasses(visible: boolean) {
-  return visible ? "fade-up [animation-duration:1s]" : "opacity-0 translate-y-6";
+  return visible ? "scroll-reveal-in" : "opacity-0 translate-y-6";
 }
