@@ -59,7 +59,7 @@ export function Hero() {
           50M+ organic views every month
         </div> */}
 
-        <h1 className="w-full text-[clamp(2.5rem,9.5vw+1.125rem,7rem)] sm:text-[clamp(2.25rem,8vw+1rem,7rem)] font-bold leading-[0.82] tracking-[-0.02em] sm:tracking-[-0.04em] text-balance">
+        <h1 className="w-full text-[clamp(2.5rem,9.5vw+1.125rem,7rem)] sm:text-[clamp(2.25rem,8vw+1rem,7rem)] font-bold leading-[0.95] sm:leading-[0.82] tracking-[-0.02em] sm:tracking-[-0.04em] text-balance">
           <span className="block blur-in">
             Human Beings Are <span className="text-serif text-gradient-warm">Predictable.</span>
           </span>

@@ -5,7 +5,7 @@ export function Cta() {
       <div className="absolute inset-0 bg-grid pointer-events-none" />
       <div className="capitalize max-w-5xl mx-auto text-center px-6 relative z-10">
         <div className="capitalize text-3xl md:text-4xl font-bold leading-tight mb-8 ">We think <span className="text-serif italic">strategically</span>, not <span className="text-serif italic">differently</span></div>
-        <h2 className="text-[4rem] font-bold leading-[0.95] tracking-[-0.04em]">
+        <h2 className="text-[clamp(2.5rem,9.5vw+1.125rem,7rem)] sm:text-[4rem] font-bold leading-[0.95] sm:leading-[0.95] tracking-[-0.02em] sm:tracking-[-0.04em] text-balance">
           One message to <span className="text-serif text-gradient-warm">yfame</span> could lead to the best career decision you've ever made.
         </h2>
         <a
