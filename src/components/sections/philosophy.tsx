@@ -60,7 +60,7 @@ function PhilosophyCard({ item }: { item: (typeof philosophies)[number] }) {
           </span>
           {/* <span className="chip mt-4">{item.tag}</span> */}
         </div>
-        <h3 className="mt-2 text-3xl font-bold leading-tight">{item.title}</h3>
+        <h3 className="mt-2 text-3xl font-bold leading-[1.1]">{item.title}</h3>
         <p className="mt-6 text-muted-foreground leading-relaxed">{item.body}</p>
       </div>
     </article>
@@ -77,7 +77,7 @@ export function Philosophy() {
         <div className="mb-20 text-center">
           <h2
             ref={headingRef}
-            className={`capitalize text-[3rem] font-bold leading-[0.98] tracking-[-0.03em] max-w-5xl mx-auto ${scrollRevealClasses(headingVisible)}`}
+            className={`capitalize text-[3rem] font-bold leading-[1.1] tracking-[-0.03em] max-w-5xl mx-auto ${scrollRevealClasses(headingVisible)}`}
           >
             Our philosophy of <span className="text-serif text-gradient-warm">growth.</span>
           </h2>

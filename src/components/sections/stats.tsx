@@ -8,11 +8,18 @@ const stats = [
 export function Stats() {
   return (
     <section className="py-20 border-b border-border">
-      <div className="max-w-[1400px] mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-px bg-border">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 grid grid-cols-2 md:grid-cols-4 gap-px bg-border">
         {stats.map((s) => (
-          <div key={s.v} className="bg-background px-6 py-10 md:py-14 text-center hover:bg-card transition">
-            <div className="text-serif text-5xl md:text-7xl text-gradient-warm">{s.k}</div>
-            <div className="mt-3 text-[10px] uppercase tracking-[0.3em] text-muted-foreground font-sans font-normal">{s.v}</div>
+          <div
+            key={s.v}
+            className="@container bg-background px-3 py-8 sm:px-6 sm:py-10 md:py-14 text-center hover:bg-card transition min-w-0 overflow-hidden"
+          >
+            <div className="text-serif text-[clamp(1.5rem,22cqi,4.5rem)] md:text-7xl text-gradient-warm leading-none">
+              {s.k}
+            </div>
+            <div className="mt-3 text-[clamp(8px,3.2cqi,10px)] uppercase tracking-[0.15em] sm:tracking-[0.3em] text-muted-foreground font-sans font-normal">
+              {s.v}
+            </div>
           </div>
         ))}
       </div>

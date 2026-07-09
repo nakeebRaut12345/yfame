@@ -59,16 +59,13 @@ export function Hero() {
           50M+ organic views every month
         </div> */}
 
-        <h1 className="w-full text-[clamp(2.5rem,9.5vw+1.125rem,7rem)] sm:text-[clamp(2.25rem,8vw+1rem,7rem)] font-bold leading-[0.95] sm:leading-[0.82] tracking-[-0.02em] sm:tracking-[-0.04em] text-balance">
+        <h1 className="w-full text-[clamp(2.5rem,9.5vw+1.125rem,7rem)] sm:text-[clamp(2.25rem,8vw+1rem,7rem)] font-bold leading-[1.0] tracking-[-0.02em] sm:tracking-[-0.04em] text-balance">
           <span className="block blur-in">
-            Human Beings Are <span className="text-serif text-gradient-warm">Predictable.</span>
-          </span>
-          <span className="block blur-in blur-in-delay-1">
-            Content is Too.
+            Human Beings Are <span className="text-serif text-gradient-warm">Predictable.</span> <span className="block blur-in -mt-[5px]">Content is Too.</span>
           </span>
         </h1>
 
-        <p className="mt-3 sm:mt-4 text-sm sm:text-base md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed text-balance px-1 fade-up fade-up-delay-1">
+        <p className="mt-3 sm:mt-4 text-sm sm:text-base md:text-xl text-muted-foreground max-w-2xl mx-auto leading-snug text-balance px-1 fade-up fade-up-delay-1">
           The secret to virality isn't chasing algorithms.
           <br />
           It's understanding <span className="text-foreground">Human Behaviour</span> and mastering the <span className="text-foreground">Fundamentals</span>.

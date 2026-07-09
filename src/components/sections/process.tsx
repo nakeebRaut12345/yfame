@@ -20,10 +20,10 @@ export function Process() {
           ref={headingRef}
           className={`mb-16 text-center ${scrollRevealClasses(headingVisible)}`}
         >
-          <h2 className=" text-[3rem] font-bold leading-[0.98] tracking-[-0.03em] max-w-5xl mx-auto">
+          <h2 className=" text-[3rem] font-bold leading-[1.1] tracking-[-0.03em] max-w-6xl mx-auto">
             All We Need is <span className="text-serif text-gradient-warm">2 Hours</span> of Your Time Every Month.
           </h2>
-          <h2 className="text-[3rem] font-bold leading-[0.98] tracking-[-0.03em] max-w-5xl mx-auto">
+          <h2 className="text-[3rem] font-bold leading-[1.1] tracking-[-0.03em] max-w-5xl mx-auto">
             We Handle the Rest.
           </h2>
         </div>

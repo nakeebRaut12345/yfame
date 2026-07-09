@@ -84,7 +84,7 @@ export function Quiz() {
         <div className="mb-16 text-center">
           <h2
             ref={headingRef}
-            className={`capitalize text-[3rem] font-bold leading-[0.98] tracking-[-0.03em] max-w-5xl mx-auto ${scrollRevealClasses(headingVisible)}`}
+            className={`capitalize text-[3rem] font-bold leading-[1.1] tracking-[-0.03em] max-w-5xl mx-auto ${scrollRevealClasses(headingVisible)}`}
           >
             Is this actually <span className="text-serif text-gradient-warm">true?</span>
           </h2>

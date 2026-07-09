@@ -1,11 +1,15 @@
 export function Nav() {
   return (
-    <header className="absolute top-0 inset-x-0 z-50 px-4">
-      <div className="max-w-[1400px] mx-auto flex items-center justify-between">
-        <a href="#top" className="font-display font-bold text-lg tracking-tight flex items-center gap-2 px-3 py-0 md:px-4 md:py-2 rounded-full">
-          {/* <span className="w-2 h-2 rounded-full bg-primary pulse-dot" /> */}
-          {/* Y<span className="text-primary">FAME</span> */}
-          <img src="/yfame_logo.png" alt="" width="150px" className="-translate-y-2 md:translate-y-0" />
+    <header className="absolute top-5 left-0 right-0 z-50 px-4 sm:px-6 pt-2 md:pt-3">
+      <div className="max-w-[1400px] mx-auto flex items-center justify-start">
+        <a href="#top" className="block shrink-0" aria-label="Yfame">
+          <img
+            src="/yfame_logo.png"
+            alt="Yfame"
+            width={140}
+            height={36}
+            className="h-8 w-auto md:h-9"
+          />
         </a>
         {/* <nav className="hidden md:flex items-center gap-1 glass rounded-full p-1.5">
           {["Doctors", "Process", "Philosophy", "Framework", "Quiz"].map((n) => (

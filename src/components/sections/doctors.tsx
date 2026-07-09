@@ -13,7 +13,7 @@ const caseStudies = [
   },
   {
     name: "Ameya Innovex",
-    result: "1M impressions",
+    result: "1M+ impressions",
     img: "/innovex.png",
   },
 ];
@@ -28,9 +28,10 @@ export function Doctors() {
         <div className="mb-16 text-center">
           <h2
             ref={headingRef}
-            className={`capitalize text-[3rem] font-bold leading-[0.98] tracking-[-0.03em] max-w-5xl mx-auto ${scrollRevealClasses(headingVisible)}`}
+            className={` text-[3rem] font-bold leading-[1.1] tracking-[-0.03em] max-w-5xl mx-auto ${scrollRevealClasses(headingVisible)}`}
           >
-            We work with india's top <span className="text-serif text-gradient-warm">0.1% of doctors</span> to build their social media presence.
+            <div>We Work With India's Top <span className="text-serif text-gradient-warm">0.1% of Doctors</span></div>
+             To Their Social Media Presence.
           </h2>
         </div>
 

@@ -41,9 +41,10 @@ export function Framework() {
         <div className="mb-16 text-center">
           <h2
             ref={headingRef}
-            className={`capitalize text-[3rem] font-bold leading-[0.98] tracking-[-0.03em] max-w-5xl mx-auto ${scrollRevealClasses(headingVisible)}`}
+            className={`capitalize text-[3rem] font-bold leading-[1.1] tracking-[-0.03em] max-w-5xl mx-auto ${scrollRevealClasses(headingVisible)}`}
           >
-            Our viral philosophy: <span className="text-serif text-gradient-warm">the CCN Framework.</span>
+            <span className="block sm:inline">Our viral philosophy: </span>
+            <span className="mt-3 block text-serif text-gradient-warm sm:mt-0 sm:inline">the CCN Framework.</span>
           </h2>
         </div>
 
@@ -68,7 +69,7 @@ export function Framework() {
           <div className="md:col-span-4">
             <div className="sticky top-32">
               <div className="chip mb-4">Content tips</div>
-              <h3 className="capitalize text-[3rem] font-bold leading-tight">
+              <h3 className="capitalize text-[3rem] font-bold leading-[1.1]">
                 Things we keep telling <span className="text-serif text-gradient-warm">every creator.</span>
               </h3>
               <p className="capitalize mt-4 text-muted-foreground">
