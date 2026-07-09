@@ -31,7 +31,7 @@ export function Doctors() {
             className={` text-[3rem] font-bold leading-[1.1] tracking-[-0.03em] max-w-5xl mx-auto ${scrollRevealClasses(headingVisible)}`}
           >
             <div>We Work With India's Top <span className="text-serif text-gradient-warm">0.1% of Doctors</span></div>
-             To Their Social Media Presence.
+             For Their Social Media Presence.
           </h2>
         </div>
 
