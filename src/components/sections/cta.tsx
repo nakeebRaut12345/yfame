@@ -25,7 +25,7 @@ export function Cta() {
             <span className="relative transition-transform group-hover:translate-x-1">↗</span>
           </a>
           <a
-            href="https://www.instagram.com/yfame.in?igsh=MXZsZW83ZnB3dDZseA=="
+            href="https://www.instagram.com/iamakshayy_?igsi=MWh1cnowb2N1dmdnMA=="
             target="_blank"
             rel="noopener noreferrer"
             className="group relative inline-flex w-full items-center justify-center gap-3 overflow-hidden rounded-full bg-gradient-to-br from-[#f58529] via-[#dd2a7b] to-[#8134af] px-6 md:px-10 py-5 text-xl md:text-lg font-medium text-white shadow-[0_20px_60px_-15px_#dd2a7b] transition-all duration-300 hover:scale-[1.05] hover:shadow-[0_0_32px_0_#dd2a7b88,0_24px_64px_-12px_#8134af]"
