@@ -16,6 +16,11 @@ const caseStudies = [
     result: "1M+ impressions",
     img: "/innovex.png",
   },
+  {
+    name: "Ashish Katariya",
+    result: "300K+ Organic Views First Month",
+    img: "/ashish_katariya.png",
+  },
 ];
 
 export function Doctors() {
